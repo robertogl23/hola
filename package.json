@@ -1,4 +1,5 @@
 {
+  "homepage":"https://robertogl23.github.io/template-vanilla-javascript",
   "name": "template-vanilla-javascript",
   "version": "1.0.0",
   "description": "",
@@ -6,6 +7,7 @@
   "scripts": {
     "build": "webpack --config webpack/webpack.prod.js",
     "start": "webpack serve --config webpack/webpack.dev.js",
+    "predeploy" : "npm run build",
     "deploy": "gh-pages -d build"
   },
   "repository": {
@@ -18,7 +20,6 @@
   "bugs": {
     "url": "https://github.com/robertogl23/template-vanilla-javascript/issues"
   },
-  "homepage": "https://github.com/robertogl23/template-vanilla-javascript#readme",
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",

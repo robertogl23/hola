@@ -16,7 +16,7 @@ module.exports =
         filename            : "static/js/[name].[contenthash:8].js",
         chunkFilename       : "static/js/[name].[contenthash:8].chunk.js",
         assetModuleFilename : "static/media/[name].[hash:8][ext]",
-        publicPath          : "/template-vanilla-javascript/",
+        publicPath          : "",
     },
     module: 
     {
