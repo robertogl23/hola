@@ -7,6 +7,14 @@ const prodConfig =
 {
     mode    : "production",
     // devtool : "source-map",
+    plugins: 
+    [
+        new MiniCssExtractPlugin(
+        {
+            filename      : "static/css/[name].[contenthash].css",
+            chunkFilename : "[id].[contenthash].css",
+        })
+    ],
     module  : 
     {
         rules: 
@@ -22,10 +30,6 @@ const prodConfig =
             },
         ],
     },
-    plugins: 
-    [
-        new MiniCssExtractPlugin()
-    ],
 };
 
 module.exports = merge(common, prodConfig);

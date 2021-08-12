@@ -15,12 +15,8 @@ const devConfig =
         port        : 3000,
         contentBase : "../dist",
         open        : "chrome",
-        hot         : true,
+        hot         : false,
     },
-    plugins : 
-    [
-        new HotModuleReplacementPlugin(),
-    ],
 };
 
 module.exports = merge(common, devConfig);
